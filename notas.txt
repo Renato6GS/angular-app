@@ -1,0 +1,29 @@
+Angular está ligado con TS
+
+Angular incluye bastantes dependencias, no es conveniente para proyectos pequeños.
+
+
+Para hacer test: Angular Testing Library
+
+src/app:
+  app-routing.module.ts: Enrutamiento
+
+  app.module.ts: Angular se utiliza por módulos.
+    Esto nos permite crear un código isolated. Cada módulo tiene todo lo que necesita
+    para funcionar.
+
+
+@ = Arroba Injectable. A diferencia de un componente, el @ (servicio) es singleton.
+  Es decir, que todos podrán acceder a ella.
+  ¿Por qué es mejor guardar un infomración utilizando un servicio?
+    R// Porque el módulo es volatil. El servicio se mantiene y tiene vida siempre.
+        El servicio nos sirve también para el estado global de la aplicación.
+
+  pathMatch: full = La URL tiene que ser exactamente igual al que se ingrese
+
+Scripts:
+  ng s: Servir la aplicación.
+
+  ng g <schematic>
+  ng g component "nombre": Genera un componente
+  ng g module "nombre": Vamos a generar un módulo 
